@@ -1,5 +1,8 @@
 require "bundler/setup"
 require "simple_swagger_docs"
+require 'pry'
+
+Dir["./spec/support/**/*.rb"].each { |f| require f }
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
