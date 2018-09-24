@@ -238,6 +238,12 @@ Naming/PredicateName:
 # SupportedStyles: snake_case, camelCase
 Naming/VariableName:
   EnforcedStyle: snake_case
+  Exclude:
+    - 'lib/simple_swagger_docs/v2/schema/generated/json_schema/custom/custom_json_schema_object.rb'
+    - 'lib/simple_swagger_docs/v2/schema/generated/security_definitions_object.rb'
+    - 'lib/simple_swagger_docs/v3/schema/generated/json_schema/custom/custom_json_schema_object.rb'
+    - 'lib/simple_swagger_docs/v3/schema/generated/components_object.rb'
+    - 'lib/simple_swagger_docs/v3/schema/generated/components_object.rb'
 
 # Offense count: 3
 # Cop supports --auto-correct.
