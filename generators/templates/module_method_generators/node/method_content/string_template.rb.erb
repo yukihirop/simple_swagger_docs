@@ -1,0 +1,30 @@
+<%- included_class_schema_object_name = "#{@included_class_instance.schema_object_name.underscore}"-%>
+<%- unless method_name_at_schema_patterned? -%>
+  <%- if have_node_object? -%>
+  <%- content = <<-CODE
+return @#{included_class_schema_object_name}[:#{method_name_at_schema}] unless @#{included_class_schema_object_name}[:#{method_name_at_schema}].nil?
+            data = @openapi_data[:#{method_name_at_schema}]
+            if #{node_class_name}.have_patterned_methods?
+              data = { #{method_name_at_schema}: data }
+            end
+            @#{included_class_schema_object_name}[:#{method_name_at_schema}] = #{node_class_name}.new(data)
+  CODE
+  -%>
+  <%- else -%>
+  <%- content = <<-CODE
+return @#{included_class_schema_object_name}[:#{method_name_at_schema}] unless @#{included_class_schema_object_name}[:#{method_name_at_schema}].nil?
+          @#{included_class_schema_object_name}[:#{method_name_at_schema}] ||= ::Settings.#{schema_name}.#{method_name_at_schema}
+  CODE
+  -%>
+  <%- end -%>
+<%- end -%>
+<%- if use_config? -%>
+<%= "return @#{included_class_schema_object_name}[:#{method_name_at_schema}] unless @#{included_class_schema_object_name}[:#{method_name_at_schema}].nil?" %>
+          <%= "@#{included_class_schema_object_name}[:#{method_name_at_schema}] ||= ::Settings.#{schema_name}.#{method_name_at_schema}" =%>
+<%- else -%>
+<%= "if @openapi_data&.fetch(:#{method_name_at_schema}, nil).is_a?(Hash)" %>
+            <%= content =%>
+          else
+            <%= "@#{included_class_schema_object_name}[:#{method_name_at_schema}] || @openapi_data[:#{method_name_at_schema}]" %>
+          <%= "end" =%>
+<%- end -%>
