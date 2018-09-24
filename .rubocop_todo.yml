@@ -14,12 +14,6 @@ Gemspec/OrderedDependencies:
   Exclude:
     - 'simple_swagger_docs.gemspec'
 
-# Offense count: 1
-# Cop supports --auto-correct.
-Layout/ClosingParenthesisIndentation:
-  Exclude:
-    - 'generators/classes/module_method_content_generator.rb'
-
 # Offense count: 4
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
@@ -156,11 +150,8 @@ Metrics/PerceivedComplexity:
 # Offense count: 8
 Naming/MemoizedInstanceVariableName:
   Exclude:
-    - 'generators/classes/method_content_generator.rb'
-    - 'generators/classes/method_content_generators/base_method_content_generator.rb'
     - 'generators/classes/method_generator.rb'
     - 'generators/classes/module_includer.rb'
-    - 'generators/classes/module_method_content_generator.rb'
     - 'generators/classes/module_method_generator.rb'
     - 'lib/simple_swagger_docs/v2/schema/generated/swagger_object.rb'
     - 'lib/simple_swagger_docs/v3/schema/generated/openapi_object.rb'
@@ -205,12 +196,6 @@ Style/ConditionalAssignment:
 # Cop supports --auto-correct.
 Style/EmptyLineAfterGuardClause:
   Enabled: false
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/EmptyLiteral:
-  Exclude:
-    - 'generators/classes/method_content_generators/base_method_content_generator.rb'
 
 # Offense count: 2
 # Cop supports --auto-correct.
