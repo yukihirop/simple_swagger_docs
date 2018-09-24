@@ -1,0 +1,34 @@
+<%- unless method_name_at_schema_patterned? -%>
+  <%- if have_node_object? -%>
+      <%- content = <<-CODE
+return @#{schema_object_name}[:#{method_name_at_schema}] unless @#{schema_object_name}[:#{method_name_at_schema}].nil?
+              data = @openapi_data[:#{method_name_at_schema}]
+              if #{node_class_name}.have_patterned_methods?
+                data = { #{method_name_at_schema}: data }
+              end
+              @#{schema_object_name}[:#{method_name_at_schema}] = #{node_class_name}.#{build_method}(data)
+  CODE
+      -%>
+  <%- else -%>
+  <%- content = <<-CODE
+return @#{schema_object_name}[:#{method_name_at_schema}] unless @#{schema_object_name}[:#{method_name_at_schema}].nil?
+              @#{schema_object_name}[:#{method_name_at_schema}] ||= ::Settings.#{schema_name}.#{method_name_at_schema}
+  CODE
+  -%>
+  <%- end -%>
+<%- end -%>
+<%- if use_config? -%>
+  <%- if root_schema_object_name? -%>
+<%= "return @#{schema_object_name}[:#{method_name_at_schema}] unless @#{schema_object_name}[:#{method_name_at_schema}].nil?" %>
+            <%= "@#{schema_object_name}[:#{method_name_at_schema}] ||= ::Settings.#{schema_name}" =%>
+  <%- else -%>
+<%= "return @#{schema_object_name}[:#{method_name_at_schema}] unless @#{schema_object_name}[:#{method_name_at_schema}].nil?" %>
+            <%= "@#{schema_object_name}[:#{method_name_at_schema}] ||= ::Settings.#{schema_name}.#{method_name_at_schema}" =%>
+  <%- end -%>
+<%- else -%>
+<%= "if @openapi_data&.fetch(:#{method_name_at_schema}, nil).is_a?(Hash)" %>
+              <%= content =%>
+            else
+              <%= "@#{schema_object_name}[:#{method_name_at_schema}]" %>
+            <%= "end" =%>
+<%- end -%>

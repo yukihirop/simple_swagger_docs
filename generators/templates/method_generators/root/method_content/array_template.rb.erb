@@ -1,0 +1,46 @@
+<%- content = "@openapi_data[:#{method_name_at_schema}]" -%>
+<%- if method_name_at_schema_patterned? -%>
+  <%- if have_node_object? -%>
+        <%- content=<<-CODE
+return @#{schema_object_name}[:#{method_name_at_schema}] unless @#{schema_object_name}[:#{method_name_at_schema}].nil?
+              #{method_name_at_schema}_content = []
+              #{content}.each do |key, value|
+                data = { name: key, content: value }
+                #{method_name_at_schema}_content << #{node_class_name}.new(data)
+              end
+              @#{schema_object_name}[:#{method_name_at_schema}] = #{method_name_at_schema}_content
+    CODE
+        -%>
+  <%- else -%>
+        <%- content=<<-CODE
+return @#{schema_object_name}[:#{method_name_at_schema}] unless @#{schema_object_name}[:#{method_name_at_schema}].nil?
+            #{method_name_at_schema}_content = #{content}
+            @#{schema_object_name}[:#{method_name_at_schema}_patterned] = #{method_name_at_schema}_content
+    CODE
+        -%>
+  <%- end -%>
+<%- else -%>
+  <% if have_node_object? %>
+        <%- content=<<-CODE
+return @#{schema_object_name}[:#{method_name_at_schema}] unless @#{schema_object_name}[:#{method_name_at_schema}].nil?
+              #{method_name_at_schema} = []
+              #{content}.each do |data|
+                #{method_name_at_schema} << #{node_class_name}.new(data)
+              end
+              @#{schema_object_name}[:#{method_name_at_schema}] = #{method_name_at_schema}
+    CODE
+        -%>
+  <%- else -%>
+        <%- content=<<-CODE
+return @#{schema_object_name}[:#{method_name_at_schema}] unless @#{schema_object_name}[:#{method_name_at_schema}].nil?
+#{method_name_at_schema} = #{content}
+@#{schema_object_name}[:#{method_name_at_schema}] = #{method_name_at_schema}
+    CODE
+        -%>
+  <%- end -%>
+<%- end -%>
+<%= "if @openapi_data&.fetch(:#{method_name_at_schema}, nil).is_a?(Array)" %>
+              <%= content =%>
+            else
+              <%= "@#{schema_object_name}[:#{method_name_at_schema}]" %>
+            <%= "end" =%>
