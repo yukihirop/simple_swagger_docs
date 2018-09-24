@@ -1,0 +1,46 @@
+---
+SecuritySchemaObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    type:
+      type: string
+      applies_to: Any
+      required: true
+    description:
+      type: string
+      applies_to: Any
+    name:
+      type: string
+      applies_to: apiKey
+      # this field is `required: true` in document.
+      # But, actual is `required: false`.
+      required: false
+    # instead of [in] because can not use [in]
+    _in:
+      type: string
+      applies_to: apiKey
+      # this field is `required: true` in document.
+      # But, actual is `required: false`.
+      required: false
+    schema:
+      type: string
+      applies_to: http
+      # this field is `required: true` in document.
+      # But, actual is `required: false`.
+      required: false
+    bearerFormat:
+      type: string
+      applies_to: http
+    flows:
+      type: OAuthFlowsObject
+      applies_to: oauth2
+      # this field is `required: true` in document.
+      # But, actual is `required: false`.
+      required: false
+    openIdConnectUrl:
+      type: string
+      applies_to: openIdConnect
+      # this field is `required: true` in document.
+      # But, actual is `required: false`.
+      required: false

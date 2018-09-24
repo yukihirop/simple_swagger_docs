@@ -1,0 +1,14 @@
+---
+ResponseObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    description:
+      type: string
+      required: true
+    headers:
+      type: { key: string, value: HeaderCherryObject }
+    content:
+      type: { key: string, value: MediaTypeObject }
+    links:
+      type: { key: string, value: LinkCherryObject }

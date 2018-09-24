@@ -1,0 +1,34 @@
+---
+ParameterObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    name:
+      type: string
+      required: true
+      # instead of [in] because can not use [in]
+    _in:
+      type: string
+      required: true
+    description:
+      type: string
+    required:
+      type: boolean
+    deprecated:
+      type: boolean
+    allowEmptyValue:
+      type: boolean
+    style:
+      type: string
+    explode:
+      type: string
+    allowReserved:
+      type: boolean
+    schema:
+      type: SchemaCherryObject
+    example:
+      type: Any
+    examples:
+      type: { key: string, value: ExampleCherryObject }
+    content:
+      type: { key: string, value: MediaTypeObject }

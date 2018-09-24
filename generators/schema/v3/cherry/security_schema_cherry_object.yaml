@@ -1,0 +1,8 @@
+---
+SecuritySchemaCherryObject:
+  meta:
+    filepath: './cherry'
+  nodes:
+    SecuritySchemaObject:
+      default: true
+    ReferenceObject:

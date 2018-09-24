@@ -1,0 +1,11 @@
+---
+PropertyPatternedObject:
+  meta:
+    filepath: './patterned/custom'
+  fixed_fields:
+    name:
+      type: string
+      required: true
+    content:
+      type: SchemaObject
+      required: true

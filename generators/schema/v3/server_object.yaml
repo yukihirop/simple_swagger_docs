@@ -1,0 +1,12 @@
+---
+ServerObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    url:
+      type: string
+      required: true
+    description:
+      type: string
+    patterneds:
+      type: { key: string, value: ServerVariableObject }

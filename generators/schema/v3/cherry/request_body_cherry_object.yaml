@@ -1,0 +1,8 @@
+---
+RequestBodyCherryObject:
+  meta:
+    filepath: './cherry'
+  nodes:
+    RequestBodyObject:
+      default: true
+    ReferenceObject:

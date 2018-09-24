@@ -1,0 +1,31 @@
+---
+PathItemObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    _ref:
+      type: string
+    summary:
+      type: string
+    description:
+      type: string
+    get:
+      type: OperationObject
+    put:
+      type: OperationObject
+    post:
+      type: OperationObject
+    delete:
+      type: OperationObject
+    options:
+      type: OperationObject
+    head:
+      type: OperationObject
+    patch:
+      type: OperationObject
+    trace:
+      type: OperationObject
+    servers:
+      type: ServerObject
+    parameters:
+      type: ParameterCherryObject

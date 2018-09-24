@@ -1,0 +1,27 @@
+---
+HeaderObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    description:
+      type: string
+    required:
+      type: boolean
+    deprecated:
+      type: boolean
+    allowEmptyValue:
+      type: boolean
+    style:
+      type: string
+    explode:
+      type: string
+    allowReserved:
+      type: boolean
+    schema:
+      type: SchemaObject
+    example:
+      type: Any
+    examples:
+      type: { key: string, value: ExampleObject }
+    content:
+      type: { key: string, value: MediaTypeObject }

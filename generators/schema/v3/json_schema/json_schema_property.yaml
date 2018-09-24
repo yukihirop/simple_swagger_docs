@@ -1,0 +1,44 @@
+---
+JsonSchemaProperty:
+  meta:
+    filepath: './json_schema'
+  # JSON Schema definition fixed_fields
+  fixed_fields:
+    # This field is do not exist in document.
+    # But Actual This field is exist
+    _ref:
+      type: string
+    title:
+      type: string
+    multipleOf:
+      type: number
+    maximum:
+      type: number
+    exclusiveMaximum:
+      type: boolean
+    minimum:
+      type: number
+    exclusiveMinimum:
+      type: boolean
+    maxLength:
+      type: integer
+    minLength:
+      type: integer
+    pattern:
+      type: string
+    maxItems:
+      type: integer
+    minItems:
+      type: integer
+    uniqueItems:
+      type: boolean
+    maxProperties:
+      type: number
+    minProperties:
+      type: integer
+    maxProperties:
+      type: integer
+    required:
+      type: [string]
+    enum:
+      type: [Any]

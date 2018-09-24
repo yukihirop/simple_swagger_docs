@@ -1,0 +1,8 @@
+---
+ExampleCherryObject:
+  meta:
+    filepath: './cherry'
+  nodes:
+    ExampleObject:
+      default: true
+    ReferenceObject:

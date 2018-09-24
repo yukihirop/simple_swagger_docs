@@ -1,0 +1,12 @@
+---
+ServerVariableObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    enum:
+      type: [string]
+    default:
+      type: string
+      required: true
+    description:
+      type: string

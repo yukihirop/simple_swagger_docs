@@ -1,0 +1,8 @@
+---
+CallbackObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    expressions:
+      type: [ExpressionPatternedObject]
+      patterned: true

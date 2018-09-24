@@ -1,0 +1,24 @@
+---
+OpenapiObject:
+  meta:
+    root: true
+    filepath: '.'
+  fixed_fields:
+    openapi:
+      type: string
+      required: true
+    info:
+      type: InfoObject
+      required: true
+    servers:
+      type: [ServerObject]
+    paths:
+      type: PathsObject
+    components:
+      type: ComponentsObject
+    security:
+      type: [SecurityRequirementObject]
+    tags:
+      type: [TagObject]
+    externalDocs:
+      type: ExternalDocumentObject

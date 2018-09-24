@@ -1,0 +1,13 @@
+---
+OAuthFlowsObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    implicit:
+      type: OAuthFlowObject
+    password:
+      type: OAuthFlowObject
+    clientCredentials:
+      type: OAuthFlowObject
+    authorizationCode:
+      type: OAuthFlowObject

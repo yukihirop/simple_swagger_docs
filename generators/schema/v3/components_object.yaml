@@ -1,0 +1,23 @@
+---
+ComponentsObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    schemas:
+      type: { key: string, value: SchemaCherryObject }
+    responses:
+      type: { key: string, value: ResponseCherryObject }
+    parameters:
+      type: { key: string, value: ParameterCherryObject }
+    examples:
+      type: { key: string, value: ExampleCherryObject }
+    requestBodies:
+      type: { key: string, value: RequestBodyCherryObject }
+    headers:
+      type: { key: string, value: HeaderCherryObject }
+    securitySchemes:
+      type: { key: string, value: SecuritySchemaCherryObject }
+    links:
+      type: { key: string, value: LinkCherryObject }
+    callbacks:
+      type: { key: string, value: CallbackCherryObject }

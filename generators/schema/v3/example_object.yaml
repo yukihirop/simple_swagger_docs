@@ -1,0 +1,13 @@
+---
+ExampleObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    summary:
+      type: string
+    description:
+      type: string
+    value:
+      type: Any
+    externalValue:
+      type: string

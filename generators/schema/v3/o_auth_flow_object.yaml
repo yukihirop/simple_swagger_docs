@@ -1,0 +1,22 @@
+---
+OAuthFlowObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    authorizationUrl:
+      type: string
+      applies_to: oauth2
+      required: true
+    tokenUrl:
+      type: string
+      applies_to: oauth2
+      # this field is `required: true` in document.
+      # But, actual is `required: false`.
+      required: false
+    refreshUrl:
+      type: string
+      applies_to: oauth2
+    scopes:
+      type: { key: string, value: string }
+      applies_to: oauth2
+      required: true

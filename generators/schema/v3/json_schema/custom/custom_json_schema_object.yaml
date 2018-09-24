@@ -1,0 +1,11 @@
+---
+CustomJsonSchemaObject:
+  meta:
+    filepath: './json_schema/custom'
+  fixed_fields:
+    properties:
+      type: [PropertyPatternedObject]
+      patterned: true
+    additionalProperties:
+      type: [PropertyPatternedObject]
+      patterned: true
