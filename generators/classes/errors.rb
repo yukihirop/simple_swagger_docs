@@ -1,0 +1,1 @@
+class ImplementError < StandardError; end
