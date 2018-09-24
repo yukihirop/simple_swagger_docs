@@ -1,0 +1,15 @@
+---
+XmlObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    name:
+      type: string
+    namespace:
+      type: string
+    prefix:
+      type: string
+    attribute:
+      type: string
+    wrapped:
+      type: boolean

@@ -1,0 +1,10 @@
+---
+LicenseObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    name:
+      type: string
+      required: true
+    url:
+      type: string

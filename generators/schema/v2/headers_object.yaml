@@ -1,0 +1,8 @@
+---
+HeadersObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    headers:
+      type: [NameHeaderObjectPatternedObject]
+      patterned: true

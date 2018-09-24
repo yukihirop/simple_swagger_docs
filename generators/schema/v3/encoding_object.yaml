@@ -1,0 +1,15 @@
+---
+EncodingObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    contentType:
+      type: string
+    headers:
+      type: { key: string, value: HeaderCherryObject }
+    style:
+      type: string
+    explode:
+      type: boolean
+    allowReserved:
+      type: boolean

@@ -1,0 +1,8 @@
+---
+SecurityRequirementObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    security:
+      type: [NamePatternedObject]
+      patterned: true

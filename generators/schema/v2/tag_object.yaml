@@ -1,0 +1,12 @@
+---
+TagObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    name:
+      type: string
+      required: true
+    description:
+      type: string
+    externalDocs:
+      type: ExternalDocumentationObject

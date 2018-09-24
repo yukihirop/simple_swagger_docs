@@ -1,0 +1,10 @@
+---
+DiscriminatorObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    propertyname:
+      type: string
+      required: true
+    mapping:
+      type: {key: string, value: string }

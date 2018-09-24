@@ -1,0 +1,22 @@
+---
+SchemaObject:
+  meta:
+    filepath: '.'
+    includes:
+      - JsonSchemaProperty
+      - JsonSchemaAdjustedByOpenapiProperty
+  fixed_fields:
+    nullable:
+      type: boolean
+    discriminator:
+      type: boolean
+    readOnly:
+      type: boolean
+    xml:
+      type: XmlObject
+    externalDocs:
+      type: ExternalDocumentObject
+    example:
+      type: Any
+    deprecated:
+      type: boolean

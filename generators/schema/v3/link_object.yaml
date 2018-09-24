@@ -1,0 +1,17 @@
+---
+LinkObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    operationRef:
+      type: string
+    operationId:
+      type: string
+    parameters:
+      type: { key: string, value: expression }
+    requestBody:
+      type: { key: string, value: expression }
+    desscription:
+      type: string
+    server:
+      type: ServerObject

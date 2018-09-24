@@ -1,0 +1,10 @@
+---
+ResponsesObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    default:
+      type: ResponseCherryObject
+    responses:
+      type: [HttpStatusCodePatternedObject]
+      patterned: true

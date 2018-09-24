@@ -1,0 +1,8 @@
+---
+LinkCherryObject:
+  meta:
+    filepath: './cherry'
+  nodes:
+    LinkObject:
+      default: true
+    ReferenceObject:

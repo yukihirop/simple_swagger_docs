@@ -1,0 +1,9 @@
+---
+ExternalDocumentationObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    description:
+      type: string
+    url:
+      type: string

@@ -1,0 +1,30 @@
+---
+OperationObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    tags:
+      type: [string]
+    summary:
+      type: string
+    description:
+      type: string
+    externalDocs:
+      type: ExternalDocumentObject
+    operationId:
+      type: string
+    parameters:
+      type: [ParameterCherryObject]
+    requestBody:
+      type: RequestBodyCherryObject
+    responses:
+      type: ResponsesObject
+      required: true
+    callbacks:
+      type: { key: string, value: CallbackCherryObject }
+    deprecated:
+      type: boolean
+    security:
+      type: [SecurityRequirementObject]
+    servers:
+      type: [ServerObject]

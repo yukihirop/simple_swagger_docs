@@ -1,0 +1,26 @@
+<%- content = "#{openapi_data_at_schema_object}[:#{method_name_at_schema}]" -%>
+<%- included_class_schema_object_name = "#{@included_class_instance.schema_object_name.underscore}"-%>
+<%- unless method_name_at_schema_patterned? -%>
+  <%- if have_node_object? -%>
+        <%- content=<<-CODE
+return @#{included_class_schema_object_name}[:#{method_name_at_schema}] unless @#{included_class_schema_object_name}[:#{method_name_at_schema}].nil?
+            #{method_name_at_schema}_content = {}
+            #{content}.each do |key, data|
+              #{method_name_at_schema}_content[key] = #{node_class_name}.new(data)
+            end
+            @#{included_class_schema_object_name}[:#{method_name_at_schema}] = #{method_name_at_schema}_content
+    CODE
+        -%>
+  <%- else -%>
+        <%- content=<<-CODE
+return @#{included_class_schema_object_name}[:#{method_name_at_schema}] unless @#{included_class_schema_object_name}[:#{method_name_at_schema}].nil?
+@#{included_class_schema_object_name}[:#{method_name_at_schema}] = #{content}
+    CODE
+        -%>
+  <%- end -%>
+<%- end -%>
+<%= "if @openapi_data&.fetch(:#{method_name_at_schema}, nil).is_a?(Hash)" %>
+            <%= content =%>
+          else
+            <%= "@#{included_class_schema_object_name}[:#{method_name_at_schema}] || @openapi_data[:#{method_name_at_schema}]" %>
+          end

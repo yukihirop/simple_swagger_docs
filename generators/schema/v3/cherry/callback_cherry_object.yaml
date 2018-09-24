@@ -1,0 +1,8 @@
+---
+CallbackCherryObject:
+  meta:
+    filepath: './cherry'
+  nodes:
+    CallbackObject:
+      default: true
+    ReferenceObject:

@@ -1,0 +1,14 @@
+---
+RequestBodyObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    description:
+      type: string
+    content:
+      type: { key: string, value: MediaType }
+      # Definition is required: true
+      # But, required: false in fact.
+      required: false
+    required:
+      type: boolean

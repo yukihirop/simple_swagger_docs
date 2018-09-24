@@ -1,0 +1,33 @@
+---
+JsonSchemaAdjustedByOpenapiProperty:
+  meta:
+    filepath: './json_schema'
+  # The following fixed_fields are taken from the JSON Schema definition but their definitions were adjusted to the OpenAPI Specification.
+  fixed_fields:
+    type:
+      type: string
+    allOf:
+      type: SchemaObject
+    oneOf:
+      type: SchemaObject
+    anyOf:
+      type: SchemaObject
+    not:
+      type: SchemaObject
+    items:
+      type: SchemaObject
+    # This field definition is differenct from Document.
+    # Autual Definition is like this:
+    properties:
+      type: CustomJsonSchemaObject
+    # This field definition is differenct from Document.
+    # Autual Definition is like this:
+    additionalProperties:
+      type: CustomJsonSchemaObject
+    description:
+      type: string
+    format:
+      type: string
+    default:
+      type: type
+      dependented: true

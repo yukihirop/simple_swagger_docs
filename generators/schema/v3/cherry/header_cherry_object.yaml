@@ -1,0 +1,8 @@
+---
+HeaderCherryObject:
+  meta:
+    filepath: './cherry'
+  nodes:
+    HeaderObject:
+      default: true
+    ReferenceObject:

@@ -1,0 +1,8 @@
+---
+ExampleObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    examples:
+      type: [MimeTypePatternedObject]
+      patterned: true

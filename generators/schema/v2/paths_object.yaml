@@ -1,0 +1,8 @@
+---
+PathsObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    paths:
+      type: [PathPatternedObject]
+      patterned: true

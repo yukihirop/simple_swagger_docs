@@ -1,0 +1,8 @@
+---
+ParameterCherryObject:
+  meta:
+    filepath: './cherry'
+  nodes:
+    ParameterObject:
+      default: true
+    ReferenceObject:

@@ -1,0 +1,18 @@
+---
+InfoObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    title:
+      type: string
+      required: true
+    description:
+      type: string
+    termsOfService:
+      type: string
+    contact:
+      type: ContactObject
+    license:
+      type: LicenseObject
+    version:
+      type: string

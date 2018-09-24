@@ -1,0 +1,8 @@
+---
+DefinitionsObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    definitions:
+      type: [NameSchemaObjectPatternedObject]
+      patterned: true

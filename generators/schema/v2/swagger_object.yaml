@@ -1,0 +1,38 @@
+SwaggerObject:
+  meta:
+    root: true
+    filepath: '.'
+  fixed_fields:
+    swagger:
+      type: string
+      required: true
+    info:
+      type: InfoObject
+      required: true
+    host:
+      type: string
+    basePath:
+      type: string
+    schemes:
+      type: [string]
+    consumes:
+      type: [string]
+    produces:
+      type: [string]
+    paths:
+      type: PathsObject
+      required: true
+    definitions:
+      type: DefinitionsObject
+    parameters:
+      type: parametersDefinitionsObject
+    responses:
+      type: ResponsesDefinitionsObject
+    securityDefinitions:
+      type: SecurityDefinitionsObject
+    security:
+      type: [SecurityRequirementObject]
+    tags:
+      type: [TagObject]
+    externalDocs:
+      type: ExternalDocumentationObject

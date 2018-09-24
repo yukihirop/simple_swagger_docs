@@ -1,0 +1,24 @@
+---
+PathItemObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    # instead of [_ref] because can not use [$ref]
+    _ref:
+      type: string
+    get:
+      type: OperationObject
+    put:
+      type: OperationObject
+    post:
+      type: OperationObject
+    delete:
+      type: OperationObject
+    options:
+      type: OperationObject
+    head:
+      type: OperationObject
+    patch:
+      type: OperationObject
+    parameters:
+      type: [ParameterCherryObject]

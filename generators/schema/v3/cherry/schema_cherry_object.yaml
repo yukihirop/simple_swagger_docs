@@ -1,0 +1,8 @@
+---
+SchemaCherryObject:
+  meta:
+    filepath: './cherry'
+  nodes:
+    SchemaObject:
+      default: true
+    ReferenceObject:

@@ -1,0 +1,8 @@
+---
+ReferenceObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    _ref:
+      type: string
+      required: true

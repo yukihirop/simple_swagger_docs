@@ -1,0 +1,11 @@
+---
+HttpStatusCodePatternedObject:
+  meta:
+    filepath: './patterned'
+  fixed_fields:
+    name:
+      type: string
+      required: true
+    content:
+      type: ResponseCherryObject
+      required: true

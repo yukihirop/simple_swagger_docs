@@ -1,0 +1,13 @@
+---
+MediaTypeObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    schema:
+      type: SchemaCherryObject
+    example:
+      type: Any
+    examples:
+      type: { key: string, value: ExampleCherryObject }
+    encoding:
+      type: { key: string, value: EncodingObject }

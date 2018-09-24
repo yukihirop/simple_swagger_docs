@@ -1,0 +1,9 @@
+---
+ReferenceObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    # instead of [_ref] because can not use [$ref]
+    _ref:
+      type: string
+      required: true
