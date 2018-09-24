@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "erubis"
+  spec.add_development_dependency "rubocop", '~>0.53.0'
+  spec.add_development_dependency "onkcop", '~>0.53.0.0'
 
   spec.add_runtime_dependency "config"
   spec.add_runtime_dependency "activesupport"
