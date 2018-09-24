@@ -14,15 +14,6 @@ Gemspec/OrderedDependencies:
   Exclude:
     - 'simple_swagger_docs.gemspec'
 
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, IndentOneStep, IndentationWidth.
-# SupportedStyles: case, end
-Layout/CaseIndentation:
-  Exclude:
-    - 'generators/classes/v2/config_methods.rb'
-    - 'generators/classes/v3/config_methods.rb'
-
 # Offense count: 1
 # Cop supports --auto-correct.
 Layout/ClosingParenthesisIndentation:
@@ -37,15 +28,6 @@ Layout/EmptyLinesAroundModuleBody:
   Exclude:
     - 'lib/simple_swagger_docs/v2/schema/root_updatable.rb'
     - 'lib/simple_swagger_docs/v3/schema/root_updatable.rb'
-
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyleAlignWith, AutoCorrect, Severity.
-# SupportedStylesAlignWith: keyword, variable, start_of_line
-Layout/EndAlignment:
-  Exclude:
-    - 'generators/classes/v2/config_methods.rb'
-    - 'generators/classes/v3/config_methods.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -133,14 +115,6 @@ Lint/UnusedBlockArgument:
   Exclude:
     - 'generators/tasks/generate.rb'
 
-# Offense count: 5
-Lint/UselessAssignment:
-  Exclude:
-    - 'generators/classes/config_methods/fixed_fields.rb'
-    - 'generators/classes/config_methods/meta.rb'
-    - 'generators/classes/config_methods/meta/filepath.rb'
-    - 'generators/classes/config_methods/nodes.rb'
-
 # Offense count: 7
 Metrics/AbcSize:
   Max: 33
@@ -217,16 +191,6 @@ Naming/VariableName:
     - 'lib/simple_swagger_docs/v3/schema/generated/json_schema/custom/custom_json_schema_object.rb'
     - 'lib/simple_swagger_docs/v3/schema/generated/components_object.rb'
     - 'lib/simple_swagger_docs/v3/schema/generated/components_object.rb'
-
-# Offense count: 5
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: prefer_alias, prefer_alias_method
-Style/Alias:
-  Exclude:
-    - 'generators/classes/config_methods.rb'
-    - 'generators/classes/config_methods/fixed_fields.rb'
-    - 'generators/classes/config_methods/meta/filepath.rb'
 
 # Offense count: 4
 # Cop supports --auto-correct.
