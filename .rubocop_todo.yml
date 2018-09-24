@@ -29,15 +29,6 @@ Layout/ClosingParenthesisIndentation:
   Exclude:
     - 'generators/classes/module_method_content_generator.rb'
 
-# Offense count: 4
-# Cop supports --auto-correct.
-Layout/EmptyLines:
-  Exclude:
-    - 'lib/simple_swagger_docs/v2/schema/generated/json_schema/json_schema_property.rb'
-    - 'lib/simple_swagger_docs/v2/schema/node_updatable.rb'
-    - 'lib/simple_swagger_docs/v3/schema/generated/json_schema/json_schema_property.rb'
-    - 'lib/simple_swagger_docs/v3/schema/node_updatable.rb'
-
 # Offense count: 5
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
