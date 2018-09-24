@@ -155,6 +155,9 @@ Naming/MemoizedInstanceVariableName:
     - 'generators/classes/module_method_generator.rb'
     - 'lib/simple_swagger_docs/v2/schema/generated/swagger_object.rb'
     - 'lib/simple_swagger_docs/v3/schema/generated/openapi_object.rb'
+    - 'generators/classes/method_content_generator.rb'
+    - 'generators/classes/module_method_content_generator.rb'
+    - 'generators/classes/method_content_generators/base_method_content_generator.rb'
 
 # Offense count: 30
 # Configuration parameters: EnforcedStyle.
@@ -226,6 +229,9 @@ Style/HashSyntax:
 Style/MethodCalledOnDoEndBlock:
   Exclude:
     - 'generators/classes/module_generator.rb'
+    - 'generators/classes/class_generator.rb'
+    - 'generators/classes/original_node_class_generators/patterned_object/class_generator.rb'
+    - 'generators/classes/original_node_class_generators/cherry_object/class_generator.rb'
 
 # Offense count: 6
 Style/MultilineBlockChain:
@@ -290,3 +296,27 @@ Style/TrailingCommaInHashLiteral:
 Style/UnneededPercentQ:
   Exclude:
     - 'simple_swagger_docs.gemspec'
+
+##########################
+#### Additional Rule #####
+##########################
+
+Style/MultilineBlockChain:
+  Exclude:
+    - 'lib/simple_swagger_docs/v2/schema/transform_keys_methods.rb'
+    - 'lib/simple_swagger_docs/v3/schema/transform_keys_methods.rb'
+    - 'lib/simple_swagger_docs/v2/schema/docs_methods.rb'
+    - 'lib/simple_swagger_docs/v3/schema/docs_methods.rb'
+
+Layout/EndAlignment:
+  Exclude:
+    - 'generators/classes/v2/config_methods.rb'
+    - 'generators/classes/v3/config_methods.rb'
+
+Lint/UselessAssignment:
+  Exclude:
+    - 'generators/classes/config_methods/meta.rb'
+    - 'generators/classes/config_methods/nodes.rb'
+    - 'generators/classes/config_methods/meta/filepath.rb'
+    - 'generators/classes/config_methods/fixed_fields.rb'
+    - 'generators/classes/config_methods/fixed_fields.rb'
