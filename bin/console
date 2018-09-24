@@ -7,8 +7,13 @@ require "simple_swagger_docs"
 # with your gem easier. You can also use a different console, if you like.
 
 # (If you use this, don't forget to add pry to your Gemfile!)
-# require "pry"
-# Pry.start
+require "pry"
 
-require "irb"
-IRB.start(__FILE__)
+require 'config'
+Config.load_and_set_settings(File.expand_path('../../lib/simple_swagger_docs/v2/schema/config/swagger_docs_base.yaml', __FILE__))
+# Config.load_and_set_settings(File.expand_path('../../lib/simple_swagger_docs/v3/schema/config/openapi_docs_base.yaml',__FILE__))
+
+Pry.start
+
+# require "irb"
+# IRB.start(__FILE__)
