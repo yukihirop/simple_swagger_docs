@@ -29,18 +29,6 @@ Layout/ClosingParenthesisIndentation:
   Exclude:
     - 'generators/classes/module_method_content_generator.rb'
 
-# Offense count: 5
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: empty_lines, empty_lines_except_namespace, empty_lines_special, no_empty_lines, beginning_only, ending_only
-Layout/EmptyLinesAroundClassBody:
-  Exclude:
-    - 'generators/classes/node_builders/node_object_builder.rb'
-    - 'generators/classes/node_builders/patterned_object_builder.rb'
-    - 'generators/classes/node_builders/schema_object_builder.rb'
-    - 'generators/template_helpers/method_generators/root/template_helper.rb'
-    - 'generators/template_helpers/module_method_generators/node/template_helper.rb'
-
 # Offense count: 4
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
