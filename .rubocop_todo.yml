@@ -218,18 +218,6 @@ Naming/VariableName:
     - 'lib/simple_swagger_docs/v3/schema/generated/components_object.rb'
     - 'lib/simple_swagger_docs/v3/schema/generated/components_object.rb'
 
-# Offense count: 3
-# Cop supports --auto-correct.
-Performance/RedundantMatch:
-  Exclude:
-    - 'generators/classes/node_builders/node_object_builder.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
-Performance/RegexpMatch:
-  Exclude:
-    - 'generators/classes/node_builders/node_object_builder.rb'
-
 # Offense count: 5
 # Cop supports --auto-correct.
 # Configuration parameters: EnforcedStyle.
@@ -239,8 +227,6 @@ Style/Alias:
     - 'generators/classes/config_methods.rb'
     - 'generators/classes/config_methods/fixed_fields.rb'
     - 'generators/classes/config_methods/meta/filepath.rb'
-    - 'generators/classes/node_builders/base_object_builder.rb'
-    - 'generators/classes/node_builders/no_object_builder.rb'
 
 # Offense count: 4
 # Cop supports --auto-correct.
