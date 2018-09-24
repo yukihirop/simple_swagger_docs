@@ -1,0 +1,54 @@
+---
+ParameterObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    name:
+      type: string
+    # instead of [in] because can not use [in]
+    _in:
+      type: string
+    description:
+      type: string
+    required:
+      type: boolean
+    schema:
+      type: SchemaObject
+    type:
+      type: string
+    format:
+      type: string
+    allowEmptyValue:
+      type: boolean
+    items:
+      type: ItemsObject
+    collectionFormat:
+      type: string
+    default:
+      # Any == *
+      type: Any
+    maximum:
+      type: number
+    exclusiveMaximum:
+      type: boolean
+    minimum:
+      type: number
+    exclusiveMinimum:
+      type: boolean
+    maxLength:
+      type: integer
+    minLength:
+      type: integer
+    pattern:
+      type: string
+    maxItems:
+      type: integer
+    minItems:
+      type: integer
+    uniqueItems:
+      type: boolean
+    enum:
+      # Any == *
+      type: [Any]
+    multipleOf:
+      type: number

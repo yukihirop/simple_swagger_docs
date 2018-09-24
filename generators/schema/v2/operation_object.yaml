@@ -1,0 +1,29 @@
+---
+OperationObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    tags:
+      type: [string]
+    summary:
+      type: string
+    description:
+      type: string
+    externalDocs:
+      type: ExternalDocumentationObject
+    operationId:
+      type: string
+    consumes:
+      type: [string]
+    produces:
+      type: [string]
+    parameters:
+      type: [ParameterCherryObject]
+    responses:
+      type: ResponsesObject
+    schemes:
+      type: [string]
+    deprecated:
+      type: boolean
+    security:
+      type: [SecurityRequirementObject]

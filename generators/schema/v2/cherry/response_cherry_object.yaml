@@ -1,0 +1,8 @@
+---
+ResponseCherryObject:
+  meta:
+    filepath: './cherry'
+  nodes:
+    ResponseObject:
+      default: true
+    ReferenceObject:

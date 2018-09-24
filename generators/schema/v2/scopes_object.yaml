@@ -1,0 +1,8 @@
+---
+ScopesObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    scopes:
+      type: [NamePatternedObject]
+      patterned: true

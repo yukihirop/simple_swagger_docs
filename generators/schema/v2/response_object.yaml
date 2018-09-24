@@ -1,0 +1,14 @@
+---
+ResponseObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    description:
+      type: string
+      required: true
+    schema:
+      type: SchemaObject
+    headers:
+      type: HeadersObject
+    examples:
+      type: ExampleObject

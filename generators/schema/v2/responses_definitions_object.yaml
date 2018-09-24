@@ -1,0 +1,8 @@
+---
+ResponsesDefinitionsObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    definitions:
+      type: [NameResponseObjectPatternedObject]
+      patterned: true

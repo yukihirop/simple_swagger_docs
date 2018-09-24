@@ -1,0 +1,11 @@
+---
+NameSchemaObjectPatternedObject:
+  meta:
+    filepath: './patterned/name'
+  fixed_fields:
+    name:
+      type: string
+      required: true
+    content:
+      type: SchemaObject
+      required: true

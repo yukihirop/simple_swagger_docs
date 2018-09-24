@@ -1,0 +1,8 @@
+---
+SecurityDefinitionsObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    securityDefinitions:
+      type: [NameSecuritySchemaObjectPatternedObject]
+      patterned: true

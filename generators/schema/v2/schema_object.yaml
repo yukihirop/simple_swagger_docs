@@ -1,0 +1,18 @@
+---
+SchemaObject:
+  meta:
+    filepath: '.'
+    includes:
+      - JsonSchemaProperty
+      - JsonSchemaAdjustedBySwaggerProperty
+  fixed_fields:
+    discriminator:
+      type: string
+    readOnly:
+      type: boolean
+    xml:
+      type: XmlObject
+    externalDocs:
+      type: ExternalDocumentationObject
+    example:
+      type: Any

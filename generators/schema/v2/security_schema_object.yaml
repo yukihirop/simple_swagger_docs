@@ -1,0 +1,40 @@
+---
+SecuritySchemaObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    type:
+      type: string
+      validity: Any
+      required: true
+    description:
+      type: string
+      validity: Any
+    name:
+      type: string
+      validity: apiKey
+      # this field is `required: true` in document.
+      # But, actual is `required: false`.
+      required: false
+    # instead of [_in] because can not use [in]
+    _in:
+      type: string
+      validity: apiKey
+      # this field is `required: true` in document.
+      # But, actual is `required: false`.
+      required: false
+    flow:
+      type: string
+      validity: oauth2
+      # this field is `required: true` in document.
+      # But, actual is `required: false`.
+      required: false
+    authorizationUrl:
+      type: string
+      validity: oauth2
+    tokenUrl:
+      type: string
+      validity: oauth2
+    scopes:
+      type: ScopesObject
+      validity: oauth2

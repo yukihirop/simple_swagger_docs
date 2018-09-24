@@ -1,0 +1,44 @@
+---
+HeaderObject:
+  meta:
+    filepath: '.'
+  fixed_fields:
+    description:
+      type: string
+    type:
+      type: string
+      required: true
+    format:
+      type: string
+    items:
+      type: [ItemsObject]
+    collectionFormat:
+      type: string
+    default:
+      # Any == *
+      type: Any
+    maximum:
+      type: number
+    exclusiveMaximum:
+      type: boolean
+    minimum:
+      type: number
+    exclusiveMinimum:
+      type: boolean
+    maxLength:
+      type: integer
+    minLength:
+      type: integer
+    pattern:
+      type: string
+    maxItems:
+      type: integer
+    minItems:
+      type: integer
+    uniqueItems:
+      type: boolean
+    enum:
+      # Any == *
+      type: [Any]
+    multipleOf:
+      type: number
