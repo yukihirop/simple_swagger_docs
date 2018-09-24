@@ -36,9 +36,7 @@ Layout/ClosingParenthesisIndentation:
 Layout/EmptyLinesAroundModuleBody:
   Exclude:
     - 'lib/simple_swagger_docs/v2/schema/root_updatable.rb'
-    - 'lib/simple_swagger_docs/v2/schema/transform_keys_methods.rb'
     - 'lib/simple_swagger_docs/v3/schema/root_updatable.rb'
-    - 'lib/simple_swagger_docs/v3/schema/transform_keys_methods.rb'
 
 # Offense count: 2
 # Cop supports --auto-correct.
@@ -305,9 +303,7 @@ Style/MethodCalledOnDoEndBlock:
 Style/MultilineBlockChain:
   Exclude:
     - 'lib/simple_swagger_docs/v2/schema/docs_methods.rb'
-    - 'lib/simple_swagger_docs/v2/schema/transform_keys_methods.rb'
     - 'lib/simple_swagger_docs/v3/schema/docs_methods.rb'
-    - 'lib/simple_swagger_docs/v3/schema/transform_keys_methods.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
