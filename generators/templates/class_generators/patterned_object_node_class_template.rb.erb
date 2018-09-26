@@ -70,7 +70,7 @@ module SimpleSwaggerDocs
           <%= "bad_args << :#{method_name_at_schema} if openapi_data[:#{method_name_at_schema}].nil?" %>
 <%- end -%>
           <%= "unless bad_args.empty?" %>
-            <%= "required_keys = bad_args.join(',')" %>
+            <%= "required_keys = bad_args.join(', ')" %>
             <%= "raise \"initialize args:" %> <%= '#{required_keys}' %> <%= "is required.\"" %>
           end
         end
