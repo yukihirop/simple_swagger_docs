@@ -13,6 +13,13 @@ require 'config'
 Config.load_and_set_settings(File.expand_path('../../lib/simple_swagger_docs/v2/schema/config/swagger_docs_base.yaml', __FILE__))
 # Config.load_and_set_settings(File.expand_path('../../lib/simple_swagger_docs/v3/schema/config/openapi_docs_base.yaml',__FILE__))
 
+require_relative '../generators/support/yaml_router/lib/yaml_router'
+schema_path = File.expand_path('../../generators/schema/v3/**/*.yaml', __FILE__)
+schema_paths = Dir.glob(schema_path)
+YamlRouter::Root.load_and_set_settings(schema_paths)
+
+include YamlRouter::Flatten
+
 Pry.start
 
 # require "irb"
